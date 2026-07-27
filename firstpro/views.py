@@ -4,7 +4,7 @@ from .models import register
 # Create your views here.
 def home(request):
     # return HttpResponse("I am home page")
-    return render(request, 'home.html')
+    return render(request, 'login.html')
 
 def about(request):
     # return HttpResponse("I am about page")
@@ -23,7 +23,7 @@ def saveform(request):
         register_data = register(Fullname=fullname, email=email, contact=contact, password=password)
         register_data.save()
 
-        return HttpResponse("Form submitted successfully!")
+        return redirect('/login')  # Redirect to the login page after saving the form
     else:
         return HttpResponse("Invalid request method.")
         
@@ -68,7 +68,7 @@ def login(request):
 
         try:
             user = register.objects.filter(email=email, password=password).first()
-            return redirect('/viewdata')  # Redirect to the viewdata page after successful login
+            return redirect('/home.html')  # Redirect to the home page after successful login
         except register.DoesNotExist:
             return HttpResponse("Invalid email or password.")
     else:
