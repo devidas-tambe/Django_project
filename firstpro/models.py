@@ -19,3 +19,7 @@ class register(models.Model):
     email = models.EmailField(max_length=100)
     contact=models.CharField(max_length=10)
     password=models.CharField(max_length=10)
+
+class doc1(models.Model):
+    fullname=models.CharField(max_length=100)
+    photo=models.FileField(upload_to='images')

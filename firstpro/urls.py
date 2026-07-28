@@ -17,4 +17,11 @@ urlpatterns = [
     path('edit_data',views.edit_data),
     path('update_data',views.update_data),
     path('login',views.login),
+    path('login_check',views.login_check),
+    path('dashboard',views.dashboard),
+    path('logout',views.logout),
+    path('addcookie',views.addcookie),
+    path('viewcookie',views.viewcookie),
+    path('file',views.file),
+    path('filesave',views.filesave), 
 ]

@@ -10,7 +10,7 @@
 
     <h1>update</h1>
 
-<form action="update_data" method="post">
+<form action="updateprofile" method="post">
     {% csrf_token %}
     {% for i in data %}
     <input type="hidden" name="id" value="{{ i.id }}">
