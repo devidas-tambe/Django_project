@@ -7,7 +7,7 @@ def home(request):
     return render(request, 'login.html')
  
 def about(request):
-    # return HttpResponse("I am about page")  
+    # return HttpResponse("I am about page")   
     return render(request, 'about.html')
 
 def registration(request):
