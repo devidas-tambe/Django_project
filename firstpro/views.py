@@ -5,7 +5,7 @@ from .models import register , doc1
 def home(request):
     # return HttpResponse("I am home page")
     return render(request, 'login.html')
-
+ 
 def about(request):
     # return HttpResponse("I am about page")  
     return render(request, 'about.html')
