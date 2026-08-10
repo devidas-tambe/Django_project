@@ -15,7 +15,7 @@ def registration(request):
 
 def saveform(request):
     if request.method == "POST":
-        fullname = request.POST.get('Fullname')
+        fullname = request.POST.get('Fullname') 
         email = request.POST.get('email')
         contact = request.POST.get('contact')
         password = request.POST.get('password')
