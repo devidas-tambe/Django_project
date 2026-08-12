@@ -11,7 +11,7 @@
 <body> 
     <center><h1>Document upload form</h1></center>
     <form action="filesave" method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
+        {% csrf_token %} 
         <input type="text" placeholder="Enter your Nane", name="fullname"
         <br><br> 
         <input type="file" placeholder="Enter your Document", name="photo"
