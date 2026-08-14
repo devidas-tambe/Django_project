@@ -5,7 +5,7 @@ class student(models.Model):
     fullname = models.CharField(max_length=100)
     email = models.EmailField(max_length=100)
     contact=models.CharField(max_length=100)
-    city=models.CharField(max_length=100)
+    city=models.CharField(max_length=100) 
     
 class employee(models.Model):
     name = models.CharField(max_length=100)
