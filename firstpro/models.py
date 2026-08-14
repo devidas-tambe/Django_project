@@ -12,7 +12,7 @@ class employee(models.Model):
     email = models.EmailField(max_length=100)
     contact=models.CharField(max_length=100)
     city=models.CharField(max_length=100)
-
+ 
 class register(models.Model):
     Fullname = models.CharField(max_length=100)
     email = models.EmailField(max_length=100)
