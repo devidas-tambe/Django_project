@@ -9,7 +9,7 @@
 
 </head> 
 <body>
-    <form method="POST" action="/login_check">
+    <form method="POST" action="/login_check"> 
         {% csrf_token %}    
         <label for="email">Email:</label>
         <input type="email" name="email" placeholder="Email">
